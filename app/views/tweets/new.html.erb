@@ -1,0 +1,9 @@
+<p><%= @test %></p>
+<%= form_for Tweet.new do |f| %>
+  <%= f.label :title %>
+  <%= f.text_area :title %>
+  <%= f.label :content %>
+  <%= f.text_area :content %>
+  <%= f.hidden_field :test,:value => @test%>
+  <%= f.submit(:KKK => @test) %>
+<% end %>

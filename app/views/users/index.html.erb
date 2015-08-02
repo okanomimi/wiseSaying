@@ -1,0 +1,10 @@
+<%= button_to "new", :btn_id => "new" %>
+<% @users.each do |user| %>
+  <h1><%=user.name %></h1>
+  <p>1<%=user.id %></p>
+  <p><%= user.location%></p>
+  <% user.tweet.each do |tweet| %>
+  <p>tweet_id <%= tweet.id %>  <%= tweet.count %></p>
+  <% end %>
+  
+<% end %>
